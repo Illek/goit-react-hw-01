@@ -1,13 +1,14 @@
 import FriendList from "./FriendList/FriendList";
 import Profile from "./Profile/Profile";
+import userData from "../userData.json";
 
 const App = () => {
   return (
     <div>
       <header></header>
       <main>
-        <Profile />
-        <FriendList />
+        <Profile user={userData} />
+        {/* <FriendList /> */}
       </main>
     </div>
   );
