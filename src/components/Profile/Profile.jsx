@@ -8,21 +8,21 @@ const Profile = ({ user }) => {
           className={s.avatarImg}
           src={user.avatar}
           alt={user.username}
-          width="96"
+          width="148"
         />
         <p className={s.nameTitle}>{user.username}</p>
-        <p className={s.infoTitle}>{user.tag}</p>
+        <p className={s.infoTitle}>&#64;{user.tag}</p>
         <p className={s.infoTitle}>{user.location}</p>
       </div>
 
       <ul className={s.statsList}>
         <li className={s.statsItem}>
           <span className={s.statsTitle}>Followers</span>
-          <span className={s.statsInfo}>{user.stats.folowers}</span>
+          <span className={s.statsInfo}>{user.stats.followers}</span>
         </li>
         <li className={s.statsItem}>
           <span className={s.statsTitle}>Views</span>
-          <span className={s.statsInfo}>{user.stats.folowers}</span>
+          <span className={s.statsInfo}>{user.stats.views}</span>
         </li>
         <li className={s.statsItem}>
           <span className={s.statsTitle}>Likes</span>
